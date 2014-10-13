@@ -1,9 +1,9 @@
 jslogo - Logo in JavaScript
 ===========================
 
-This is hosted at http://inexorabletash.github.io/jslogo/ for playing with live.
+This is hosted at http://www.mikewarriner.com/jslogo/ for playing with live.
 
-[Language Reference](http://htmlpreview.github.com/?https://github.com/inexorabletash/jslogo/blob/master/language.htm) -
+[Language Reference](http://htmlpreview.github.com/?https://github.com/MikeWarriner/jslogo/blob/master/language.htm) -
 this attempts to implement a subset of [UCBLogo](http://www.cs.berkeley.edu/~bh/v2ch14/manual.html)
 defined in in *Brian Harvey's Computer Science Logo Style*
 
@@ -33,9 +33,3 @@ Logo Links
 * [Introduction to Computer Programming](http://www.bfoit.org/itp/itp.html)
 * [LogoForum](http://groups.yahoo.com/group/LogoForum/)
 
-To Do
------
-* Document deviations from UCB Logo standard
-* Make these examples all work: [Logo 15-word challenge](http://www.mathcats.com/gallery/15wordcontest.html)
-* Tail-call optimization
-* Make execution async so you can watch the turtle move

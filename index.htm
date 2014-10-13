@@ -27,10 +27,6 @@
 <div id="topbar" class="panel">
   <h1>Logo Interpreter</h1>
   <p>
-    By <a href="mailto:inexorabletash@gmail.com">Joshua Bell</a>
-    | <a target="_blank" href="tests.htm">Unit Tests</a>
-    | <a target="_blank" href="https://github.com/inexorabletash/jslogo">Source</a>
-    | <a title="Collaborate with TogetherJS" href="#" id="start-togetherjs" onclick="TogetherJS(); return false">Collaborate</a><sup><i>New!</i></sup>
   </p>
 </div>
 
@@ -48,7 +44,6 @@
 </div>
 
 <div id="input-panel" class="panel">
-  <!-- TODO: Make this a button or anchor -->
   <div id="run"><div class="label">Run</div></div>
   <div id="input">
     <div class="inner">
@@ -64,53 +59,46 @@
 
 <div id="sidebar-header" class="panel">
   <ul>
-    <li><a id="sb-link-reference" href="#">Reference</a> - the Logo language
+    <li><a target="_blank" href="LogoReference/Logoreference.html">Help!</a> - the Logo language
+    <li><a id="sb-link-examples" href="#">Examples</a> - fun things to try out
     <li><a id="sb-link-library" href="#">Library</a> - your procedures
     <li><a id="sb-link-history" href="#">History</a> - everything you&apos;ve done here
-    <li><a id="sb-link-examples" href="#">Examples</a> - fun things to try out
-    <li><a id="sb-link-extras" href="#">Extras</a> - helpful utilities
     <li><a id="sb-link-links" href="#">Links</a> - other Logo resources
+    <li><a id="sb-link-credits" href="#">Credits</a> - Who did what
   </ul>
 </div>
 
 <div id="sidebar" class="panel examples">
-  <iframe frameBorder="0" allowtransparency="true" src="language.htm" class="choice" id="reference"></iframe>
   <div class="choice snippets" id="examples">
   </div>
+
   <div class="choice snippets" id="history">
     <!-- TODO: Add "clear history" button -->
   </div>
   <div class="choice snippets" id="library">
   </div>
-  <div class="choice" id="links">
+  <div class="choice"  id="links">
 
     <ul>
       <li><a target="_blank" href="http://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a> according to Wikipedia
       <li><a target="_blank" href="http://utdallas.edu/~veerasam/logo/">UT Dallas LOGO Workshop</a> - fun examples to try
-      <li>Other Web-based Logos:
-        <ul>
-          <li><a target="_blank" href="http://logo.twentygototen.org/_REo_2F2">papert - logo in your browser</a>
-          <li><a target="_blank" href="https://github.com/drj11/curlylogo" data-old-href="http://www.amberfrog.com/logo/">Curly Logo</a> (uses SVG).
-          <li><a target="_blank" href="https://blog.heroku.com/archives/2011/4/1/announcing_heroku_for_logo">Heroku for Logo</a> - based on Logo; launched April 1st, 2011
-        </ul>
       <li><a target="_blank" href="http://el.media.mit.edu/logo-foundation/">The Logo Foundation</a> with links to learning resources and software
-      <li><a target="_blank" href="http://www.cs.berkeley.edu/~bh/logo.html">Berkeley Logo (UCBLogo)</a> is a well respected freeware interpreter
-      <li><a target="_blank" href="http://elica.net/download/papers/LogoTreeProject.pdf">The Logo Tree Project</a> analyzes Logo variants
-      <li><a target="_blank" href="http://blog.ianbicking.org/2007/10/19/logo/">Ian Bicking on Logo</a>
-      <li><a target="_blank" href="http://pylogo.sourceforge.net/">PyLogo</a> is a sweet interpreter in Python
       <li><a target="_blank" href="http://www.bfoit.org/itp/itp.html">Introduction to Computer Programming</a> using Logo
-      <li><a target="_blank" href="http://groups.yahoo.com/group/LogoForum/">LogoForum</a> - a group for Logo programming discussions
-      </ul>
-      <p style="margin-top: 5em;">
-        Syntax Highlighting by <a target="_blank" href="http://codemirror.net">CodeMirror</a>.
-      </p>
-  </div>
-  <div class="choice" id="extras">
-    <ul>
-      <li><a id="savelibrary" href="#">Download Library</a>
-      <li><a id="screenshot" href="#">Download Drawing</a>
+      <li><a target="_blank" href="http://turtleacademy.com/index/en">Where to go next - the Turtle Acadamy</a> - more advanced learning
     </ul>
+
   </div>
+  <div class="choice"  id="credits">
+
+    <p>Credits</p>
+    
+	<p><a href="mailto:inexorabletash@gmail.com">Original by Joshua Bell</a></br>
+    <a href="http://www.mikewarriner.com">Modified by Mike Warriner</a></br>
+    <a target="_blank" href="https://github.com/MikeWarriner/jslogo">Source code is here</a></br>
+    <a target="_blank" href="http://codemirror.net">Syntax Highlighting by CodeMirror</a>.
+    </p>
+  </div>
+  
 </div>
 
 <script src="floodfill.js"></script>
@@ -120,18 +108,14 @@
 <!-- TogetherJS Collaboration -->
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-18610679-3']);
-  _gaq.push(['_trackPageview']);
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-27828663-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
-
-<a href="https://github.com/inexorabletash/jslogo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
-
 </body>

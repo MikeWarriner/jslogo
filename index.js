@@ -206,6 +206,7 @@ var input = {};
   if ('CodeMirror' in window) {
     var BRACKETS = '()[]{}';
 
+    
     // Single Line
     CodeMirror.keyMap['single-line'] = {
       'Enter': function(cm) {
@@ -227,6 +228,7 @@ var input = {};
       },
       fallthrough: ['default']
     };
+    
     var cm = CodeMirror.fromTextArea($('#logo-ta-single-line'), {
       autoCloseBrackets: { pairs: BRACKETS, explode: false },
       matchBrackets: true,
@@ -265,10 +267,12 @@ var input = {};
       (isMulti() ? cm2 : cm).setValue(v);
     };
     input.setFocus = function() {
-      (isMulti() ? cm2 : cm).focus();
+      //(isMulti() ? cm2 : cm).focus();
     };
 
+	
   } else {
+  
     // Fallback in case of no CodeMirror
 
     $('#logo-ta-single-line').addEventListener('keydown', function(e) {
@@ -378,6 +382,7 @@ window.addEventListener('load', function() {
 });
 
 
+
 //
 // Hook up sidebar links
 //
@@ -387,7 +392,7 @@ window.addEventListener('load', function() {
   sidebars.forEach(function(k) {
     $('#sb-link-' + k).addEventListener('click', function() {
       var cl = $('#sidebar').classList;
-      sidebars.forEach(function(sb) { cl.remove(sb); });
+      sidebars.forEach(function(sb) { console.log("remove "+sb); cl.remove(sb); });
       cl.add(k);
     });
   });
@@ -536,6 +541,7 @@ window.addEventListener('load', function() {
     return true;
   }
 
+/*
   $('#savelibrary').addEventListener('click', function() {
     var library = logo.procdefs().replace('\n', '\r\n');
     var url = 'data:text/plain,' + encodeURIComponent(library);
@@ -548,7 +554,7 @@ window.addEventListener('load', function() {
     if (!saveDataAs(url, 'logo_drawing.png'))
       alert("Sorry, not supported by your browser");
   });
-
+*/
   function demo(param) {
     param = String(param);
     if (param.length > 0) {
