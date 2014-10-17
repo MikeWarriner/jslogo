@@ -3,11 +3,10 @@ jslogo - Logo in JavaScript
 
 This is hosted at http://www.mikewarriner.com/jslogo/ for playing with live.
 
-[Language Reference](http://htmlpreview.github.com/?https://github.com/MikeWarriner/jslogo/blob/master/language.htm) -
-this attempts to implement a subset of [UCBLogo](http://www.cs.berkeley.edu/~bh/v2ch14/manual.html)
-defined in in *Brian Harvey's Computer Science Logo Style*
+This is a branch of https://github.com/inexorabletash/jslogo modified and packaged for teaching Logo to 12-16 year olds.
 
-Use `git clone --recursive` to get [polyfill](https://github.com/inexorabletash/polyfill) for older browsers.
+
+[Teaching materials](https://github.com/MikeWarriner/jslogo/docs)
 
 Logo Examples
 -------------
