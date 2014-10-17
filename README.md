@@ -6,7 +6,7 @@ This is hosted at http://www.mikewarriner.com/jslogo/ for playing with live.
 This is a branch of https://github.com/inexorabletash/jslogo modified and packaged for teaching Logo to 12-16 year olds.
 
 
-[Teaching materials](https://github.com/MikeWarriner/jslogo/docs)
+[Teaching materials](http://www.mikewarriner.com/jslogo/docs)
 
 Logo Examples
 -------------
